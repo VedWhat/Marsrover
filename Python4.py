@@ -7,7 +7,7 @@ add=0x40
 while True:
 	a=input()
 	v=list(a)
-	for i in list:
+	for i in v:
 		val=int(i)
 		bus.write_byte(add,a)
 
