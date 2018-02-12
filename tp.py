@@ -1,4 +1,4 @@
-def translate(value, leftMin, leftMax, rightMin, rightMax):
+def map(value, leftMin, leftMax, rightMin, rightMax):
 
     leftSpan = leftMax - leftMin
     rightSpan = rightMax - rightMin
@@ -6,5 +6,5 @@ def translate(value, leftMin, leftMax, rightMin, rightMax):
     return rightMin + (valueScaled * rightSpan)
 
 m=int(input())
-m=translate(m,int(-1),int(1),int(0),int(255))
+m=map(m,int(-1),int(1),int(0),int(255))
 print(m)
