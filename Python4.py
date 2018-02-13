@@ -36,6 +36,7 @@ class LSM9DS0(object):
 
         return reading
 
+<<<<<<< HEAD
     def readSensor(self, i2c_device, xyz_lh):
         """Returns (x, y, z) tuple from the given sensor's registers
         """
@@ -54,4 +55,14 @@ x,y,z=xyz
 print(x,y,z)
 time.sleep(0.5)
 	 
+=======
+while True:
+	a=int(input())
+	
+	p=a%256
+ 	bus.write_byte(0x04,p)
+
+	b=int(a/256)
+	bus.write_byte(0x04,b)
+>>>>>>> ea8fff97b916c97d14d6223ea7408763659578af
 
