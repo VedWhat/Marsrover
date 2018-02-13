@@ -12,6 +12,8 @@ def gpio(x,y):
     GPIO.PWM(18,X)
     GPIO.PWM(13,Y)
 
+def frequency(x,y):
+	
 joystick.init()
 pygame.display.init()
 j=joystick.Joystick(0)
@@ -32,3 +34,18 @@ while(1):
     if q==-0 :
         q=-q
     print(x,y,z,q)
+
+def move(x,y):
+	if x>0:
+		#insert three
+	else:
+		#insert four
+ #Set the duty cycle to the required value
+ #Set the frequency 
+
+
+
+
+
+
+
